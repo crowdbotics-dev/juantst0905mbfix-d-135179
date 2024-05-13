@@ -1,5 +1,5 @@
 from rest_framework import viewsets
-from home.models import Product, Product, Product
+from home.models import Product
 from .serializers import ProductSerializer, ProductSerializer, ProductSerializer
 from rest_framework import authentication
 from rest_framework.authtoken.serializers import AuthTokenSerializer
