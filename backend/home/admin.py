@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import French, Product, Rdsc, Solid
+from .models import Rdsc, French, Solid, Product
 
 admin.site.register(Product)
 admin.site.register(Solid)

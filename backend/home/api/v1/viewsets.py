@@ -1,5 +1,5 @@
 from rest_framework import viewsets
-from home.models import Product, French, Rdsc, Solid, Liquid, Spanish
+from home.models import French, Rdsc, Solid, Spanish, Liquid, Product
 from .serializers import (
     FrenchSerializer,
     LiquidSerializer,
