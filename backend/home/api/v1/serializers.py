@@ -1,5 +1,5 @@
 from django.contrib.auth import get_user_model
-from home.models import Product, Liquid, Solid
+from home.models import French, Liquid, Product, Solid
 from django.http import HttpRequest
 from django.utils.translation import gettext_lazy as _
 from allauth.account import app_settings as allauth_settings
@@ -91,4 +91,10 @@ class SolidSerializer(serializers.ModelSerializer):
 class LiquidSerializer(serializers.ModelSerializer):
     class Meta:
         model = Liquid
+        fields = "__all__"
+
+
+class FrenchSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = French
         fields = "__all__"

@@ -1,6 +1,11 @@
 from rest_framework import viewsets
-from home.models import Product, Liquid, Solid
-from .serializers import ProductSerializer, LiquidSerializer, SolidSerializer
+from home.models import Product, French, Solid, Liquid
+from .serializers import (
+    FrenchSerializer,
+    LiquidSerializer,
+    ProductSerializer,
+    SolidSerializer,
+)
 from rest_framework import authentication
 from rest_framework.authtoken.serializers import AuthTokenSerializer
 from rest_framework.viewsets import ModelViewSet, ViewSet
@@ -59,3 +64,12 @@ class LiquidViewSet(viewsets.ModelViewSet):
         authentication.TokenAuthentication,
     )
     queryset = Liquid.objects.all()
+
+
+class FrenchViewSet(viewsets.ModelViewSet):
+    serializer_class = FrenchSerializer
+    authentication_classes = (
+        authentication.SessionAuthentication,
+        authentication.TokenAuthentication,
+    )
+    queryset = French.objects.all()

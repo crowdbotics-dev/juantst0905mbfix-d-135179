@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import Liquid, Solid, Product
+from .models import French, Solid, Product
 
 admin.site.register(Product)
 admin.site.register(Solid)
-admin.site.register(Liquid)
+admin.site.register(French)
 
 # Register your models here.
