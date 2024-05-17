@@ -4,6 +4,7 @@ from .viewsets import (
     FrenchViewSet,
     LiquidViewSet,
     ProductViewSet,
+    RdscViewSet,
     SolidViewSet,
     SpanishViewSet,
 )
@@ -21,6 +22,7 @@ router.register("solid", SolidViewSet)
 router.register("liquid", LiquidViewSet)
 router.register("french", FrenchViewSet)
 router.register("spanish", SpanishViewSet)
+router.register("rdsc", RdscViewSet)
 
 urlpatterns = [
     path("", include(router.urls)),

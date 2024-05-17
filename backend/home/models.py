@@ -45,3 +45,12 @@ class Spanish(models.Model):
     )
     description = models.TextField()
     price = models.IntegerField()
+
+
+class Rdsc(models.Model):
+    "Generated Model"
+    name = models.CharField(
+        max_length=100,
+    )
+    description = models.TextField()
+    price = models.IntegerField()
