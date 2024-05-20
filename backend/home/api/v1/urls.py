@@ -7,15 +7,16 @@ from .viewsets import (
     FrenchViewSet,
     SpanishViewSet,
     RdscViewSet,
-    RdscViewSet,
+    MdnsViewSet,
+    MdnsViewSet,
     FrenchViewSet,
     SolidViewSet,
     ProductViewSet,
-    RdscViewSet,
+    MdnsViewSet,
     FrenchViewSet,
     SolidViewSet,
     ProductViewSet,
-    RdscViewSet,
+    MdnsViewSet,
     FrenchViewSet,
     SolidViewSet,
     ProductViewSet,
@@ -35,6 +36,7 @@ router.register("liquid", LiquidViewSet)
 router.register("french", FrenchViewSet)
 router.register("spanish", SpanishViewSet)
 router.register("rdsc", RdscViewSet)
+router.register("mdns", MdnsViewSet)
 
 urlpatterns = [
     path("", include(router.urls)),

@@ -6,7 +6,8 @@ from home.models import (
     French,
     Spanish,
     Rdsc,
-    Rdsc,
+    Mdns,
+    Mdns,
     French,
     Solid,
     Product,
@@ -120,4 +121,10 @@ class SpanishSerializer(serializers.ModelSerializer):
 class RdscSerializer(serializers.ModelSerializer):
     class Meta:
         model = Rdsc
+        fields = "__all__"
+
+
+class MdnsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Mdns
         fields = "__all__"
