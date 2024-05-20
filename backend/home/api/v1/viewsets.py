@@ -8,11 +8,12 @@ from home.models import (
     Rdsc,
     Mdns,
     ACvs,
-    ACvs,
+    RojoAmx,
+    RojoAmx,
     French,
     Solid,
     Product,
-    ACvs,
+    RojoAmx,
     French,
     Solid,
     Product,
@@ -26,11 +27,12 @@ from .serializers import (
     RdscSerializer,
     MdnsSerializer,
     ACvsSerializer,
-    ACvsSerializer,
+    RojoAmxSerializer,
+    RojoAmxSerializer,
     FrenchSerializer,
     SolidSerializer,
     ProductSerializer,
-    ACvsSerializer,
+    RojoAmxSerializer,
     FrenchSerializer,
     SolidSerializer,
     ProductSerializer,
@@ -138,3 +140,12 @@ class ACvsViewSet(viewsets.ModelViewSet):
         authentication.TokenAuthentication,
     )
     queryset = ACvs.objects.all()
+
+
+class RojoAmxViewSet(viewsets.ModelViewSet):
+    serializer_class = RojoAmxSerializer
+    authentication_classes = (
+        authentication.SessionAuthentication,
+        authentication.TokenAuthentication,
+    )
+    queryset = RojoAmx.objects.all()

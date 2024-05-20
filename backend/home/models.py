@@ -72,3 +72,12 @@ class ACvs(models.Model):
     )
     description = models.TextField()
     price = models.IntegerField()
+
+
+class RojoAmx(models.Model):
+    "Generated Model"
+    name = models.CharField(
+        max_length=100,
+    )
+    description = models.TextField()
+    price = models.IntegerField()

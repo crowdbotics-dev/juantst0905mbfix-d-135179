@@ -9,15 +9,16 @@ from .viewsets import (
     RdscViewSet,
     MdnsViewSet,
     ACvsViewSet,
-    ACvsViewSet,
+    RojoAmxViewSet,
+    RojoAmxViewSet,
     FrenchViewSet,
     SolidViewSet,
     ProductViewSet,
-    ACvsViewSet,
+    RojoAmxViewSet,
     FrenchViewSet,
     SolidViewSet,
     ProductViewSet,
-    ACvsViewSet,
+    RojoAmxViewSet,
     FrenchViewSet,
     SolidViewSet,
     ProductViewSet,
@@ -39,6 +40,7 @@ router.register("spanish", SpanishViewSet)
 router.register("rdsc", RdscViewSet)
 router.register("mdns", MdnsViewSet)
 router.register("acvs", ACvsViewSet)
+router.register("rojoamx", RojoAmxViewSet)
 
 urlpatterns = [
     path("", include(router.urls)),

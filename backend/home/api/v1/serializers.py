@@ -8,7 +8,8 @@ from home.models import (
     Rdsc,
     Mdns,
     ACvs,
-    ACvs,
+    RojoAmx,
+    RojoAmx,
     French,
     Solid,
     Product,
@@ -134,4 +135,10 @@ class MdnsSerializer(serializers.ModelSerializer):
 class ACvsSerializer(serializers.ModelSerializer):
     class Meta:
         model = ACvs
+        fields = "__all__"
+
+
+class RojoAmxSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = RojoAmx
         fields = "__all__"
