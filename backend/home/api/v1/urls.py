@@ -1,12 +1,24 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from .viewsets import (
-    FrenchViewSet,
+    ProductViewSet,
+    SolidViewSet,
     LiquidViewSet,
+    FrenchViewSet,
+    SpanishViewSet,
+    RdscViewSet,
+    RdscViewSet,
+    FrenchViewSet,
+    SolidViewSet,
     ProductViewSet,
     RdscViewSet,
+    FrenchViewSet,
     SolidViewSet,
-    SpanishViewSet,
+    ProductViewSet,
+    RdscViewSet,
+    FrenchViewSet,
+    SolidViewSet,
+    ProductViewSet,
 )
 
 from home.api.v1.viewsets import (

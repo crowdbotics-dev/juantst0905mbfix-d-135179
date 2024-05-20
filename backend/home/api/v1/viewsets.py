@@ -1,12 +1,35 @@
 from rest_framework import viewsets
-from home.models import French, Rdsc, Solid, Spanish, Liquid, Product
+from home.models import (
+    Product,
+    Solid,
+    Liquid,
+    French,
+    Spanish,
+    Rdsc,
+    Rdsc,
+    French,
+    Solid,
+    Product,
+    Rdsc,
+    French,
+    Solid,
+    Product,
+)
 from .serializers import (
-    FrenchSerializer,
+    ProductSerializer,
+    SolidSerializer,
     LiquidSerializer,
+    FrenchSerializer,
+    SpanishSerializer,
+    RdscSerializer,
+    RdscSerializer,
+    FrenchSerializer,
+    SolidSerializer,
     ProductSerializer,
     RdscSerializer,
+    FrenchSerializer,
     SolidSerializer,
-    SpanishSerializer,
+    ProductSerializer,
 )
 from rest_framework import authentication
 from rest_framework.authtoken.serializers import AuthTokenSerializer

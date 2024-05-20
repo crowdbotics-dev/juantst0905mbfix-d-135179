@@ -1,5 +1,16 @@
 from django.contrib.auth import get_user_model
-from home.models import French, Liquid, Product, Rdsc, Solid, Spanish
+from home.models import (
+    Product,
+    Solid,
+    Liquid,
+    French,
+    Spanish,
+    Rdsc,
+    Rdsc,
+    French,
+    Solid,
+    Product,
+)
 from django.http import HttpRequest
 from django.utils.translation import gettext_lazy as _
 from allauth.account import app_settings as allauth_settings
