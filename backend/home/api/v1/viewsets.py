@@ -7,11 +7,12 @@ from home.models import (
     Spanish,
     Rdsc,
     Mdns,
-    Mdns,
+    ACvs,
+    ACvs,
     French,
     Solid,
     Product,
-    Mdns,
+    ACvs,
     French,
     Solid,
     Product,
@@ -24,11 +25,12 @@ from .serializers import (
     SpanishSerializer,
     RdscSerializer,
     MdnsSerializer,
-    MdnsSerializer,
+    ACvsSerializer,
+    ACvsSerializer,
     FrenchSerializer,
     SolidSerializer,
     ProductSerializer,
-    MdnsSerializer,
+    ACvsSerializer,
     FrenchSerializer,
     SolidSerializer,
     ProductSerializer,
@@ -127,3 +129,12 @@ class MdnsViewSet(viewsets.ModelViewSet):
         authentication.TokenAuthentication,
     )
     queryset = Mdns.objects.all()
+
+
+class ACvsViewSet(viewsets.ModelViewSet):
+    serializer_class = ACvsSerializer
+    authentication_classes = (
+        authentication.SessionAuthentication,
+        authentication.TokenAuthentication,
+    )
+    queryset = ACvs.objects.all()
