@@ -1,18 +1,15 @@
 from django.contrib.auth import get_user_model
 from home.models import (
-    Product,
-    Solid,
-    Liquid,
-    French,
-    Spanish,
-    Rdsc,
-    Mdns,
     ACvs,
-    RojoAmx,
-    RojoAmx,
+    Emilia,
     French,
-    Solid,
+    Liquid,
+    Mdns,
     Product,
+    Rdsc,
+    RojoAmx,
+    Solid,
+    Spanish,
 )
 from django.http import HttpRequest
 from django.utils.translation import gettext_lazy as _
@@ -141,4 +138,10 @@ class ACvsSerializer(serializers.ModelSerializer):
 class RojoAmxSerializer(serializers.ModelSerializer):
     class Meta:
         model = RojoAmx
+        fields = "__all__"
+
+
+class EmiliaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Emilia
         fields = "__all__"

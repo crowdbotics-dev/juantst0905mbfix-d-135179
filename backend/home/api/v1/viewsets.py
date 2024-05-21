@@ -1,41 +1,27 @@
 from rest_framework import viewsets
 from home.models import (
-    Product,
-    Solid,
-    Liquid,
-    French,
     Spanish,
+    RojoAmx,
     Rdsc,
+    French,
+    Product,
     Mdns,
     ACvs,
-    RojoAmx,
-    RojoAmx,
-    French,
+    Liquid,
     Solid,
-    Product,
-    RojoAmx,
-    French,
-    Solid,
-    Product,
+    Emilia,
 )
 from .serializers import (
-    ProductSerializer,
-    SolidSerializer,
-    LiquidSerializer,
-    FrenchSerializer,
-    SpanishSerializer,
-    RdscSerializer,
-    MdnsSerializer,
     ACvsSerializer,
-    RojoAmxSerializer,
-    RojoAmxSerializer,
+    EmiliaSerializer,
     FrenchSerializer,
-    SolidSerializer,
+    LiquidSerializer,
+    MdnsSerializer,
     ProductSerializer,
+    RdscSerializer,
     RojoAmxSerializer,
-    FrenchSerializer,
     SolidSerializer,
-    ProductSerializer,
+    SpanishSerializer,
 )
 from rest_framework import authentication
 from rest_framework.authtoken.serializers import AuthTokenSerializer
@@ -149,3 +135,12 @@ class RojoAmxViewSet(viewsets.ModelViewSet):
         authentication.TokenAuthentication,
     )
     queryset = RojoAmx.objects.all()
+
+
+class EmiliaViewSet(viewsets.ModelViewSet):
+    serializer_class = EmiliaSerializer
+    authentication_classes = (
+        authentication.SessionAuthentication,
+        authentication.TokenAuthentication,
+    )
+    queryset = Emilia.objects.all()

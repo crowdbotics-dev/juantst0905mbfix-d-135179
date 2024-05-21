@@ -1,27 +1,16 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from .viewsets import (
-    ProductViewSet,
-    SolidViewSet,
-    LiquidViewSet,
-    FrenchViewSet,
-    SpanishViewSet,
-    RdscViewSet,
-    MdnsViewSet,
     ACvsViewSet,
-    RojoAmxViewSet,
-    RojoAmxViewSet,
+    EmiliaViewSet,
     FrenchViewSet,
-    SolidViewSet,
+    LiquidViewSet,
+    MdnsViewSet,
     ProductViewSet,
+    RdscViewSet,
     RojoAmxViewSet,
-    FrenchViewSet,
     SolidViewSet,
-    ProductViewSet,
-    RojoAmxViewSet,
-    FrenchViewSet,
-    SolidViewSet,
-    ProductViewSet,
+    SpanishViewSet,
 )
 
 from home.api.v1.viewsets import (
@@ -41,6 +30,7 @@ router.register("rdsc", RdscViewSet)
 router.register("mdns", MdnsViewSet)
 router.register("acvs", ACvsViewSet)
 router.register("rojoamx", RojoAmxViewSet)
+router.register("emilia", EmiliaViewSet)
 
 urlpatterns = [
     path("", include(router.urls)),
